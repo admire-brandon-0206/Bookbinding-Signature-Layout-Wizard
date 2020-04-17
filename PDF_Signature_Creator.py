@@ -102,7 +102,7 @@ def main(argv):
     output = PyPDF2.PdfFileWriter()
 
     pages = pageCalc(sig_num, pdf)
-    print(f"There will be {pages} per signature!")
+    print(f"There will be {pages} pages per signature!")
     buildOutput(pdf,output,pages,sig_num)
 
     with open(out_path, "wb") as target:
